@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.nearby"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <uses-sdk android:minSdkVersion="8" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name=".MainActivity"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+	<activity android:name="CreateRoomActivity"
+              android:theme="@android:style/Theme.NoTitleBar"></activity>     
+	<activity android:name="RoomListActivity"></activity>
+	<activity android:name="JoinRoomListActivity"></activity>
+	<activity android:name="SettingActivity"></activity>
+	<activity android:name="UserList"
+			  android:theme="@android:style/Theme.NoTitleBar"></activity>
+	<activity android:name="ChatService"
+			  android:theme="@android:style/Theme.NoTitleBar"></activity>
+	<service  android:name="RealChatService"></service>
+	    </application>
+</manifest>
